@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Register Form</title>
+    <style>
+        .card {
+            border: 5px solid red;
+            width: 45%;
+            margin: 100px auto;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-item: center;
+            height: 100vh;
+        }
+
+        .mybtn {
+            margin-top: 30px;
+            border-radius: 20px;
+            width: 60%;
+            background-color: crimson;
+            font-size: 15px;
+            color: white;
+            transition-duration: 0.5s;
+
+        }
+
+        .mybtn:hover {
+            /*transform:scaleX(1,2);*/
+            transform: translateY(10px);
+            box-shadow: none;
+        }
+
+        .mybtn:focus {
+            outline: 3px solid b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <h1>Register Here </h1>
+        <h2 style="color:red"><i> Hey! I am a Jai prakash</h2>
+        <form>
+            <label>Name:</label>
+            <input placeholder="Enter your full name" />
+            <br><br>
+            <label>Email:</label>
+            <input placeholder="Enter your full email" />
+            <br><br>
+            <label>Gender:</label>
+            <input name="gender" type="radio" /><b> Male</b>
+            <input name="gender" type="radio" /> <b>Female</b>
+            <br><br>
+            <label>Select City:</label>
+            <select>
+                <option>Select City</option>
+                <option>Lucknow</option>
+                <option>Noida</option>
+                <option>Kanpur</option>
+                <option>Gonda</option>
+            </select>
+            <br><br>
+            <label>State:</label>
+            <input placeholder="enter State" list="state">
+            <datalist id="state">
+                <option>Uttar Pradesh</option>
+                <option>Delhi</option>
+                <option>Mumbai</option>
+            </datalist>
+            <br><br>
+            <label>Nationality:</label>
+            <input name="Nationality" type="radio" />Indian
+            <br><br>
+            <label>Matter:</label>
+            <select>
+                <option>Select </option>
+                <option>Eduaction</option>
+                <option>Jobs</option>
+                <option>Business</option>
+            </select>
+            <br><br><br><br><br><br>
+
+            <input type="checkbox"> I accept Terms&Conditions
+            <br><br><br>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</head>
+
+</html>

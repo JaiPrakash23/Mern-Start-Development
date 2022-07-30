@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700" rel="stylesheet" />
+    
+    <style>
+      *{
+      font-family: Roboto;
+
+    }
+      .card {
+        border: 3px solid black;
+        width: 30%;
+        padding: 30px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        /* padding: 10px; 
+         box-shadow : x-offset y-offset blur size color 
+         box-text : x-offset y-offset blur size color*/ 
+        box-shadow: 2px -2px 3px rgba(0, 0, 0, 0.477);
+        /* background-image: url(image1.png); */
+        background-size: cover;
+        background-color: rgb(114, 114, 84); 
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* background-image: url(im); */
+        background: linear-gradient(90deg, rgba(255, 0, 0, 0.178), rgba(255, 255, 0, 0.274), rgba(128, 128, 128, 0.265)),url(pattern.png);
+        
+      }
+      .myinput,
+      .mybtn {
+        width: 100%;
+        padding: 2px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      .mybtn {
+        margin-top: 20px;
+        border-radius: 20px;
+        width: 80%;
+        /* height: 10px; */
+        background-color: red;
+        /* margin-left: 50px; */
+        transition-duration: 0.3s;
+        color: aliceblue;
+      }
+      .myinput{
+        background-color: rgb(220, 226, 232);
+        border-bottom:2px solid red;
+        border-radius: 5px;
+        background-color: blanchedalmond;
+      }
+      .mybtn:hover{
+        /* transform:scale(1.5); */
+        transform: translateY(10px) ;
+        box-shadow: 2px 2px rgba(200, 70, 70, 0.769);
+           }
+           .form-title{
+            font-size:30px;
+            text-align:centre;
+            letter-spacing:5px;
+            text-transform: uppercase;
+            font-family:caveat;
+           }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2 style="text-align: center; color:white"; class="form-title">Signup Here</h2>
+      <form>
+        <label>Name</label>
+        <input type="text" class="myinput" />
+        <label>Email</label><br />
+        <input type="emai" class="myinput" />
+        <label>Password</label>
+        <input type="Passwor" class="myinput" />
+        <div style="text-align: center">
+          <button type="button" class="mybtn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
